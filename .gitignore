@@ -1,0 +1,32 @@
+# Ignore Django specific files
+*.pyc
+__pycache__/
+*.sqlite3
+
+# Ignore PostgreSQL database
+*.psql
+*.pgsql
+*.pgdump
+*.pgbackups
+
+# Ignore local development settings
+.env
+.env.dev
+.env.local
+
+# Ignore Python virtual environment
+venv/
+env/
+ENV/
+
+# Ignore IDE and editor specific files
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignore system and temporary files
+.DS_Store
+Thumbs.db
+
+# Ignore Docker specific files (if not needed in version control)
+docker-compose.override.yml
