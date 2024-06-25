@@ -1,5 +1,16 @@
 #!/bin/bash
 
+# Ждем запуска PostgreSQL
+if [ "$DATABASE" = "postgres" ]; then
+    echo "Waiting for postgres..."
+
+    while ! nc -z $POSTGRES_HOST $POSTGRES_PORT; do
+      sleep 0.1
+    done
+
+    echo "PostgreSQL started"
+fi
+
 # Применяем миграции
 python manage.py migrate
 

@@ -24,11 +24,9 @@ cd django-docker-g4
 ### 2. Создайте и настройте виртуальное окружение (опционально)
 
 ```bash
-cd myproject
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-cd ..
 ```
 
 ### 3. Запустите Docker Compose
