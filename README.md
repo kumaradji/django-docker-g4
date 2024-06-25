@@ -79,6 +79,10 @@ docker-compose restart
 django_docker_g4/
 ├── docker-compose.yml
 ├── .env
+├── .env.example
+├── .gitignore
+├── README.md
+├── requirements.txt
 ├── myproject/
 │   ├── myproject/
 │   │   ├── __init__.py
@@ -86,15 +90,14 @@ django_docker_g4/
 │   │   ├── settings.py
 │   │   ├── urls.py
 │   │   ├── wsgi.py
+│   ├── static/
 │   ├── Dockerfile
 │   ├── entrypoint.sh
 │   ├── manage.py
-│   ├── requirements.txt
 ├── nginx/
 │   ├── conf.d/
 │   │   └── default.conf
 │   ├── static/
-│   │   └── placeholder.txt
 │   ├── Dockerfile
 │   └── nginx.conf
 ├── postgres/
@@ -104,6 +107,7 @@ django_docker_g4/
 │   ├── include/
 │   ├── lib/
 │   └── pyvenv.cfg
+
 ```
 
 ## Описание файлов
