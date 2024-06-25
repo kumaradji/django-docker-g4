@@ -73,6 +73,13 @@ docker-compose down
 docker-compose restart
 ```
 
+### При ошибках если исполняемый файл в контейнере имеет неверный формат для данной архитектуры. 
+```bash
+docker-compose down
+docker-compose build --no-cache
+docker-compose up -d
+```
+
 ## Структура проекта
 
 ```
